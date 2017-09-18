@@ -1,0 +1,69 @@
+/*
+ Theme Name:   toivo lite Child
+ Theme URI:    http://example.com/toivo-lite-child/
+ Description:  toivo lite Child Theme
+ Author:       John Doe
+ Author URI:   http://example.com
+ Template:     toivo-lite
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Text Domain:  toivo-lite-child
+*/
+
+
+
+.loop-title ,
+.widget_recent_comments,
+.widget_search,
+.widget_categories,
+.comments-link,
+.comments-area ,
+.entry-terms,
+#top-header,
+#comments ,
+#colophon {
+  display : none;
+}
+.menu-items a {
+  color : #000 !important ;
+}
+
+#masthead {
+  background-attachment: fixed !important;
+  background-position: center !important;
+  background-size: cover;
+}
+.widget-title,.widgettitle {
+ border-bottom:2px solid blue !important
+ /*color to change*/
+}
+
+@media (max-width : 375px ) {
+  .widget {
+    text-align: center;
+  }
+}
+
+@media (min-width : 375px ) {
+  .widget_recent_entries >   ul > li {
+    border-bottom:  0 !important;
+    border-top:  0  !important;
+  }
+  .widget_recent_entries {
+    text-align: right;
+  }
+  .site-description,
+  #site-title {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .custom-logo  {
+    min-height: 300px !important;
+    min-width: 300px !important ;
+    /*margin-top: 40px !important;*/
+    margin-left: -450px ;
+    top : 125px ;
+    left: 45px  ;
+  }
+}
